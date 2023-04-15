@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f76bf"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"></TextView>
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/finding"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_above="@id/cityFinder">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/temperature"
+            android:paddingStart="30dp"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:text="">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherCondition"
+            android:textSize="30sp"
+            android:text=""
+            android:textStyle="bold"
+            android:paddingStart="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityName"
+            android:paddingStart="30dp"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:text="Loading...">
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttondesign">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Check for New city"
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+    </RelativeLayout>
+</RelativeLayout>
