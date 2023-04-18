@@ -7,6 +7,16 @@
     android:background="#3f76bf"
     tools:context=".cityFinder">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/searchCity"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Search weather for new city ?"
+        android:textColor="@color/white"
+        android:textSize="20dp"></TextView>
 
     <ImageView
         android:id="@+id/backButton"
@@ -17,7 +27,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="15dp"
-
         android:src="@drawable/back">
     </ImageView>
 
@@ -25,9 +34,10 @@
     <EditText
         android:id="@+id/searchCity"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_centerInParent="true"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/edittextdesign"
         android:gravity="center_vertical|center_horizontal"
